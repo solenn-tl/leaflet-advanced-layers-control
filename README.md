@@ -15,7 +15,6 @@ This library is a little tool to control layers on a Leaflet map. It includes la
 - `name` (string): Name of the layer.
 - `layer` (Layer): The Leaflet layer instance.
 - `opacityControl` (boolean): Enable an opacity slider for this layer.
-- `visibleByDefault` (boolean): Set whether the layer should be added to the map by default.
 
 ### Example
 First define your layers (it could be any type of layers).
@@ -36,8 +35,8 @@ const layers =
 			name: "Aerial images",
 			collapsed: true,
 			layers: [
-				{ name: "1952", layer: ignaerial1950, active: false },
-				{ name: "2015", layer: ignaerial2015, active: false },	
+				{ name: "1952", layer: ignaerial1950, active: false, opacityControl : true },
+				{ name: "2015", layer: ignaerial2015, active: false, opacityControl: true },	
 			]
 		},
 		{
