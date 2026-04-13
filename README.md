@@ -14,6 +14,7 @@ This library is a little tool to control layers on a Leaflet map. It includes la
 ### Layers options
 - `name` (string): Name of the layer.
 - `layer` (Layer): The Leaflet layer instance.
+- `active` (boolean): Set if the layer is visible or not when the map is loaded.
 - `opacityControl` (boolean): Enable an opacity slider for this layer.
 
 ### Example
