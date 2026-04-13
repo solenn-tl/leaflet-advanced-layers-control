@@ -18,27 +18,46 @@ This library is a little tool to control layers on a Leaflet map. It includes la
 - `visibleByDefault` (boolean): Set whether the layer should be added to the map by default.
 
 ### Example
-```javascript
-const layers = {
-    "Background maps": [
-        { name: "Street Map", 
-        layer: L.tileLayer('url1'), visibleByDefault: true },
-        { name: "Satellite Map", 
-        layer: L.tileLayer('url2'), 
-        visibleByDefault: false, 
-        opacityControl: true }
-    ],
-    "Overlays": [
-        { name: "Heatmap", layer: L.imageOverlay('url3'), removeBackgroundControl: true, visibleByDefault: true }
-    ]
-};
+First define your layers (it could be any type of layers).
 
-const control = L.control.advancedLayers(layers, {
-    collapsible: true,
-    collapsed: true,
-    position: 'topright',
-    color: '#2f6f95',
-}).addTo(map);
+Then, set the control layer : 
+```javascript
+const layers = 
+	[
+		{
+			name: "Maps",
+			collapsed: true,
+			layers: [
+				{ name: "Plan IGN", layer: ign2023, active: true },
+				{ name: "OpenStreetMap", layer: osm, active: false },
+			]
+		},
+		{
+			name: "Aerial images",
+			collapsed: true,
+			layers: [
+				{ name: "1952", layer: ignaerial1950, active: false },
+				{ name: "2015", layer: ignaerial2015, active: false },	
+			]
+		},
+		{
+			name: "Data",
+			collapsed: true,
+			layers: [
+				{ name: "Points", layer: geojsonLayer, active: true },
+			]
+		}
+	]
+
+const parameters = {
+		position: "topright",
+		collapsible: true,
+		collapsed: true,
+		color: "#d5c5b4",
+		title: "Control layer"
+	}
+
+const control = L.control.advancedLayers(layers, parameters).addTo(map);
 ```
 
 ## Aknowledgement
