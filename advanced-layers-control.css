@@ -1,0 +1,73 @@
+.leaflet-control-advanced-layers {
+    --alc-accent-color: #007bff;
+    background: #f8f9fa;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    width: 250px;
+}
+
+.leaflet-control-advanced-layers.collapsed {
+    width: 50px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.layers-collapse-toggle {
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    background: var(--alc-accent-color);
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.layer-group {
+    margin-bottom: 10px;
+}
+
+.layer-group-label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.layer-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.layer-label {
+    font-size: 13px;
+    color: #555;
+}
+
+.opacity-slider {
+    margin-left: 5px;
+    width: 50px;
+}
+
+.color-picker {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+button.group-collapse-toggle {
+    background: var(--alc-accent-color);
+    color: white;
+    border: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right:5px;
+}
