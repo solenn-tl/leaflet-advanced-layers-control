@@ -61,10 +61,10 @@ const control = L.control.advancedLayers(layers, parameters).addTo(map);
 
 ## Aknowledgement
 
-I would like to thanks a lot the leaflet extensions who have inspired this one : 
+I would like to thanks the authors of the leaflet extensions who have inspired this one :
 * [Stefano Cudini / Leaflet Panel Layers](https://github.com/stefanocudini/leaflet-panel-layers)
 * [jjimenezshaw / Leaflet.Control.Layers.Tree](https://github.com/jjimenezshaw/Leaflet.Control.Layers.Tree)
 
-## Note on use of generative IA 
+## Note on the use of generative IA 
 
 This application has been developped with the assistance of a generative model. 
