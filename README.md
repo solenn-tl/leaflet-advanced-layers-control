@@ -44,9 +44,8 @@ const control = L.control.advancedLayers(layers, {
 ## Aknowledgement
 
 I would like to thanks a lot the leaflet extensions who have inspired this one : 
-* [https://github.com/stefanocudini/leaflet-panel-layers](Stefano Cudini / Leaflet Panel Layers)
-* 
-* 
+* [Stefano Cudini / Leaflet Panel Layers](https://github.com/stefanocudini/leaflet-panel-layers)
+* [jjimenezshaw / Leaflet.Control.Layers.Tree](https://github.com/jjimenezshaw/Leaflet.Control.Layers.Tree)
 
 ## Note on use of generative IA 
 
